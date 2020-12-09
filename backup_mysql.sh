@@ -11,7 +11,7 @@ BACKUP_DIR="/root/backup/mysql"
 # Identifiants MySQL
 
 MYSQL_USER="root"
-MYSQL_PASSWORD="wessa0412"
+MYSQL_PASSWORD=""
 
 # Commandes MySQL (aucune raison de modifier ceci)
 
@@ -52,4 +52,4 @@ $MYSQLDUMP --force --opt --user=$MYSQL_USER -p$MYSQL_PASSWORD --skip-lock-tables
 
 #find $BACKUP_DIR/* -mtime +$RETENTION -delete
 
-sshpass -p "ADtrGjFcyaw9NfXW" scp $BACKUP_DIR/$db_$DATE.sql root@212.8.253.238:/root/ 
+sshpass -p "" scp $BACKUP_DIR/$db_$DATE.sql root@212.8.253.238:/root/ 
